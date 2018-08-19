@@ -4,12 +4,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
-/**
- * смысл кукис: куки это hashmap, нужен для того чтобы ассоциировать клиента с компьютером и тд, чтобы
- * при последующем входе узнать клиента, достать инфу о нем и кука или откуда то еще и вместо клиента ввести его данные
- * Так что getSession() можем работаеть и без прямого создания класса Cookie, оббъект session
- * все это делает внутри себя, сессия ассоциирует клиента с запросом(request), так что передаем его по всему приложению
- */
 
 @WebServlet(urlPatterns = {"/download"})
 public class DownloadServlet extends HttpServlet{
